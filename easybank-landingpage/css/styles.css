@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.logo-nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    z-index: 200;
+}
+.logo img{
+    height: 1.4rem;
+}
+.menu-bar label img{
+    height: 2.8rem;
+    z-index: 80;
+}
+#check{
+    display: none;
+}
+.backdrop ul{
+    position: fixed;
+    top:6.4rem ;
+    left: -100%;
+    width: 90%;
+    text-align: center;
+    margin:0px auto;
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    z-index: 100;
+}
+#check:checked~.backdrop ul{
+    left: 1.3rem;
+}
+#check:checked~#backdrop{
+    left: 0;
+    top: 4.5rem;
+}
+.mobile-nav{
+    padding-top: 1.2rem;
+}
+.mobile-nav li{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom:1.2rem ;
+    list-style: none;
+}
+.mobile-nav li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.76);
+    cursor: pointer;
+}
+
+#backdrop{
+    position: fixed;
+    top: 4rem;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    height: 100vh;
+    width: 100%;
+    transition: all ;
+    z-index: 0;
+}
+.header-image-1{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-image-2 img{
+    width: 100%;
+    height: 48vh;
+    z-index: 100;
+    margin-top: 0px;
+    padding: 0px 0.7rem;
+} 
+.header-content{
+    height: 50%;
+    margin: 0px 2.5rem;
+    text-align: center;
+    max-width: 40rem;
+}
+.description-title{
+    font-size: 2.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.76);
+}
+.description{
+    margin-top: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+    text-align: justify;
+}
+.invite-btn{
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+    margin: 1.3rem auto 0px auto;
+    border-radius: 2rem;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+    overflow: hidden;
+}
+.invite-btn button{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(184, 178, 178, 0.048);
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+.why-choose h1{
+    font-size: 2.2rem;
+}
+p{
+    color: rgba(0, 0, 0, 0.377);
+    font-weight: 600;
+
+}
+.wrapper-text{
+    margin-top: 2rem;
+}
+.uses-wrapper div img{
+    padding-top: 3rem;
+    padding-bottom: .7rem;
+}
+.uses-wrapper div h1,
+.uses-wrapper div h2{
+    color: rgba(0, 0, 0, 0.76);
+}
+.article-wrapper{
+    width: 100vw;
+    background-color: rgba(214, 35, 35, 0.014);
+}
+.latest-article{
+    text-align: center;
+}
+.sub-content{
+    width: 85vw;
+    margin: 3rem auto;
+    padding-bottom: 2rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    padding: 0px;
+    background-color: #ffffff;
+}
+.sub-content img{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.footer-nav__2nd{
+    padding-top: -8rem;
+}
+.sub-content h6,
+.sub-content h3,
+.sub-content p{
+    padding: .5rem 1.4rem;
+}
+.sub-content h3{
+    color: rgba(0, 0, 0, 0.76);
+}
+.footer{
+    background-color:  hsl(233, 26%, 24%);
+    color: #ffffff;
+    text-align: center;
+}
+#footer-logo{
+    margin-top: 2rem;
+    background-color: #ffffff;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    padding: .8rem;
+}
+.footer-logo img{
+    width: 5rem;
+    overflow: hidden;
+}
+.footer div{
+   margin-top: 2rem;
+}
+.social a{
+    padding: 0px .6rem;
+}
+.social a img{
+    width: 2rem;
+    height: 2rem;
+}
+.footer-nav__links ul li h3{
+    padding: .6rem 0px;
+}   
+.footer-nav__links ul li h3 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+.policy p{
+    color:rgba(247, 243, 243, 0.199) ;
+    padding-bottom: 2rem;
+}
+
+@media  (min-width: 375px){
+    .header-image-1{
+        width: 100%;
+        height: 50vh;
+        background-image: url(../images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+/* media query for tablet */
+@media screen and (min-width:468px) {
+    .uses-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .uses-wrapper div{
+        padding: 1rem;
+    }
+    .article-content{
+        display: grid;
+        grid-template-columns:  25%  25%  25%  25%;
+        padding: 5% 6%;
+     }
+     .article-content div{
+         width: 90%;
+     }
+     .article-content{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        padding: 5% 6%;
+     }
+     .footer .footer-nav__links ul li{
+         margin: 0px;
+         padding: 0px;
+         list-style: none;
+     }
+}
+@media screen and (min-width:769px){
+    
+    .menu-bar label img{
+        display: none;
+     }
+     .logo-nav{
+        height: 3.8rem;
+    }
+     .backdrop{
+         display: block;
+         height: 4rem;
+     }
+     .backdrop ul{
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         top: 0px;
+         left: 0%;
+         right: 0px;
+         width: 90%;
+         text-align: center;
+         margin:0px auto;
+         padding-bottom: 1rem;
+         border-radius: 0.8rem;
+         z-index: 100;
+     }
+       /* all mobile here is referring to desktop */
+     .mobile-nav li{
+         font-size: 1rem;
+         font-weight: 700;
+         margin: 0px 1.5rem;
+         list-style: none;
+     }
+     .mobile-nav li a{
+         text-decoration: none;
+         color: rgba(0, 0, 0, 0.76);
+         cursor: pointer;
+         transition: padding .1s;
+     }
+ 
+     .mobile-nav li a:hover{
+        background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+        color: #ffffff;
+        padding: .3rem 1rem;
+     }
+     .header-wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/bg-intro-desktop.svg);
+        background-color: rgba(214, 35, 35, 0.014);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 55% 110%;
+     }
+     .header-image-1{
+        background-image:none;
+     }
+     .header-image-2 img{
+         height: 110vh;
+         position: relative;
+         right: -15%;
+         width:100% ;
+     }
+     .header-content{
+         margin: 12rem 2rem 8rem 6rem;
+     }
+     .header-image-1{
+         width: 60%;
+         height: 100%;
+     }
+     .header-content{
+         font-size: 1.4em;
+         text-align: left;
+         width: 46%;
+         padding: 0px 4rem;
+         margin-left: 1%;
+     }
+     .description{
+         font-weight: 300;
+         width: 130%;
+     }
+     .description-title{
+         font-size: 2.4em;
+     }
+     .invite-btn{
+        position: relative;
+        left: -6%;
+     }
+     .wrapper{
+         padding: 5% 6%;
+     }
+     .why-choose{
+         width: 60%;
+         text-align: left;
+         margin-top: 4%;
+     }
+     .uses-wrapper{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+     .uses-wrapper div{
+         padding: 1rem;
+         text-align: left;
+     }
+     .article-content{
+        display: grid;
+        grid-template-columns:  25%  25%  25%  25%;
+        padding: 5% 6%;
+     }
+     .article-content div{
+         width: 90%;
+     }
+     .dollar{
+         height: inherit;
+     }
+     .footer{
+         /* display: flex;
+         justify-content: space-between;
+         align-items: center; */
+         display: grid;
+         grid-template-columns: 40% 15% 15% 30%;
+         padding: 0px 2rem 2rem 2rem;
+     }
+     .footer .footer-nav__links ul li{
+         margin: 0px;
+         padding: 0px;
+         list-style: none;
+     }
+     #footer-logo{
+         margin-top: -3rem;
+     }
+     .policy {
+         width: 100%;
+     }
+     .policy .invite-btn {
+      position: relative;
+      left: 0rem;
+       background-color: red;
+     }
+}
